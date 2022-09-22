@@ -7,8 +7,8 @@ public class Saltador extends Atleta implements Serializable{
 	private double altura;
 	private double alturaPulo;
 
-	public Saltador(String nome, int idade, int numero, double altura, double alturaPulo) {
-		super(nome, idade, numero);
+	public Saltador(String nome, int idade, String equipe, int numero, double altura, double alturaPulo) {
+		super(nome, idade, equipe, numero);
 		this.altura = altura;
 		this.alturaPulo = alturaPulo;
 	}

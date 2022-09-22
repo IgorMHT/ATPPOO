@@ -7,8 +7,8 @@ public class Nadador extends Atleta implements Serializable{
 	private String estilo;
 	private double velocidadeMaxima;
 
-	public Nadador(String nome, int idade, int numero, String estilo, double velocidadeMaxima) {
-		super(nome, idade, numero);
+	public Nadador(String nome, int idade, String equipe, int numero, String estilo, double velocidadeMaxima) {
+		super(nome, idade, equipe, numero);
 		this.estilo = estilo;
 		this.velocidadeMaxima = velocidadeMaxima;
 	}

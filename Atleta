@@ -5,12 +5,14 @@ import java.io.Serializable;
 public abstract class Atleta implements Serializable{
 	private static final long serialVersionUID = 1L;
 	String nome;
+	String equipe;
 	int numero;
 	int idade;
 	
-	public Atleta(String nome, int idade, int numero) {
+	public Atleta(String nome, int idade, String equipe, int numero) {
 		this.nome = nome;
 		this.idade = idade;
+		this.equipe = equipe;
 		this.numero = numero;
 	}
 	
@@ -20,6 +22,7 @@ public abstract class Atleta implements Serializable{
 		String retorno = "";
 		retorno += "Nome: "+this.nome+"\n";
 		retorno += "Idade: "+this.idade+"\n";
+		retorno += "Equipe: "+this.equipe+"\n";
 		retorno += "Numero: "+this.numero+"\n";
 		retorno += "Atividade: "+atividade()+"\n";
 		return retorno;

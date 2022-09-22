@@ -7,8 +7,8 @@ public class Corredor extends Atleta implements Serializable{
 	private double velocidade;
 	private double velocidadeMaxima;
 	
-	public Corredor(String nome, int idade, int numero, double velocidade, double velocidadeMaxima) {
-		super(nome, idade, numero);
+	public Corredor(String nome, int idade, String equipe, int numero, double velocidade, double velocidadeMaxima) {
+		super(nome, idade, equipe, numero);
 		this.velocidade = velocidade;
 		this.velocidadeMaxima = velocidadeMaxima;
 	}
